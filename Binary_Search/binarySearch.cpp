@@ -19,15 +19,10 @@ int binarySearch(int arr[], int n, int target){
         }
     }
     return end; //not found
-   
+
 }
 int main()
 {
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-
     int n, target;
     cin>>n;
 
@@ -35,7 +30,7 @@ int main()
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    
+
     cin>>target;
 
     sort(arr, arr+n);
