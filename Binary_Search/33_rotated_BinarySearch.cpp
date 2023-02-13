@@ -71,7 +71,7 @@ int Search(vector<int>& nums, int target)
         return binarySearch(nums, 0, pivot-1, target);
     }
     return binarySearch(nums, pivot+1, nums.size()-1, target);
-}
+} //in leetcode, submit from line 4 to line 74. 
 
 int main()
 {
