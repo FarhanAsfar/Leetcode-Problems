@@ -1,6 +1,6 @@
 ## **Leetcode-Problems**
 Here I will be uploading problems and solutions of leetcode(also from other platforms). 
 
-The topics the repo will contain-
+This repository will contain the following topics-
 - Binary Search 
 - Recursion
