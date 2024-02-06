@@ -15,3 +15,21 @@ public:
         }
     }
 };
+
+//Solve using Hash Map
+/*
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        unordered_map<int, int> check;
+
+        for(int i=0;i<nums.size();i++){
+            if(check[nums[i]]>=1){
+                return true;
+            }
+            check[nums[i]]++;
+        }
+        return false;
+    }
+};
+*/
