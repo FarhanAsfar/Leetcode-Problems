@@ -1,42 +1,18 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    #ifndef a
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    #endif
-
-    int n;    
-    int nums[n];
-    cin>>n;
-    for(int i=0;i<n;i++){
-        cin>>nums[i];
+class Solution {
+public:
+    bool check(vector<int>& nums) {
+        int n = nums.size();
+        int count = 0;
+ 
+        for(int i=0;i<n-1;i++){
+            if(nums[i]>nums[i+1]){
+                count++;
+            }
+        }
+        
+        if(nums[0]<nums[n-1]){
+            count++;
+        }
+        return count<=1;
     }
-
-    int index = 0;
-    bool flag = false;
-
-    for(int i=0;i<n-1;i++){
-        if(nums[i]<=nums[i+1]){
-            index++;
-            flag = true;
-            cout<<index;
-        }
-        else{
-            break;
-        }
-    }
-    cout<<index<<'\n';
-    for(int i=index;i<n-1;i++){
-        if(nums[i]<=nums[i+1]){
-            index++;
-            flag = true;
-        }
-        else{
-            break;
-        }
-    }
-    cout<<index<<"\n";
-    cout<<flag; 	  
-}
+};
